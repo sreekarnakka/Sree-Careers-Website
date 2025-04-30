@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreekar Careers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts: Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        .navbar {
+            background-color: #1e3a8a;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand, .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #93c5fd !important;
+        }
+        #banner {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #1e3a8a;
+            text-align: center;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            color: #1e40af;
+            text-align: center;
+            font-weight: 500;
+        }
+        h3 {
+            font-size: 1.75rem;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+        }
+        .job-card {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        .btn-custom {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            border: none;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn-custom:hover {
+            background-color: #1e40af;
+            transform: scale(1.05);
+        }
+        .ul-custom {
+            list-style: none;
+            padding-left: 0;
+        }
+        .ul-custom li {
+            padding: 0.5rem 0;
+            font-size: 1.1rem;
+            color: #374151;
+        }
+        .ul-custom li::before {
+            content: "✔";
+            color: #1e3a8a;
+            margin-right: 0.5rem;
+        }
+        .footer {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+        .animate-fadeIn {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 768px) {
+            #banner {
+                height: 400px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Sreekar Careers</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-us">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#who-we-need">Who We Need</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jobs">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+        <h1 class="animate-fadeIn">Careers at Sreekar</h1>
+        <img id="banner" src="/static/banenr.jpeg" alt="Sreekar Careers Banner" class="img-fluid animate-fadeIn mb-5">
+
+        <!-- About Section -->
+        <section id="about" class="about-section animate-fadeIn mb-5">
+            <h2>About Sreekar</h2>
+            <p class="lead text-gray-700">
+                At <strong>Sreekar</strong>, we’re a vibrant community of innovators, builders, and visionaries. 
+                Join us to tackle real-world challenges, collaborate with purpose-driven teams, and thrive in a supportive, 
+                cutting-edge environment. Your passion finds its home here.
+            </p>
+        </section>
+
+        <!-- Why Work With Us -->
+        <section id="why-us" class="section-content animate-fadeIn mb-5">
+            <h3>💡 Why Work With Us?</h3>
+            <ul class="ul-custom">
+                <li><strong>Impactful Projects:</strong> Contribute to initiatives that transform lives.</li>
+                <li><strong>Continuous Growth:</strong> Learn through mentorship and hands-on experiences.</li>
+                <li><strong>Flexible Work:</strong> Thrive in an environment that suits your lifestyle.</li>
+                <li><strong>Cutting-Edge Tech:</strong> Work with the latest tools to stay ahead.</li>
+            </ul>
+        </section>
+
+        <!-- Who We're Looking For -->
+        <section id="who-we-need" class="section-content animate-fadeIn mb-5">
+            <h3>📌 Who We're Looking For</h3>
+            <p class="lead text-gray-700">
+                We’re seeking passionate developers, designers, data enthusiasts, marketers, and dreamers ready to shape the future. 
+                If you’re driven by big ideas and bold solutions, we want you on our team.
+            </p>
+        </section>
+
+        <!-- Open Positions -->
+        <section id="jobs" class="section-content animate-fadeIn mb-5">
+            <h3>Open Positions</h3>
+            <div class="job-card">
+                <h4 class="font-semibold text-lg">Senior Software Engineer</h4>
+                <p>Build scalable systems with modern frameworks. 3+ years of experience required.</p>
+                <button class="btn-custom mt-3">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h4 class="font-semibold text-lg">UX/UI Designer</h4>
+                <p>Craft intuitive, beautiful interfaces. Proficiency in Figma or Sketch preferred.</p>
+                <button class="btn-custom mt-3">Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h4 class="font-semibold text-lg">Data Analyst</h4>
+                <p>Turn data into insights. Experience with Python and SQL is a plus.</p>
+                <button class="btn-custom mt-3">Apply Now</button>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center animate-fadeIn mb-5">
+            <button class="btn-custom">Contact Us</button>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer animate-fadeIn">
+        <p>© 2025 Sreekar. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
