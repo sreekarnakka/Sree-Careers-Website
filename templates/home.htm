@@ -137,7 +137,7 @@
                         <a class="nav-link" href="#who-we-need">Who We Need</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#jobs">Jobs</a>
+                        <a class="nav-link" href="#jobs-openings">Jobs</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -183,23 +183,16 @@
         </section>
 
         <!-- Open Positions -->
-        <section id="jobs" class="section-content animate-fadeIn mb-5">
+        <section id="jobs-openings" class="section-content animate-fadeIn mb-5">
             <h3>Open Positions</h3>
+            {% for job in jobs %}
             <div class="job-card">
-                <h4 class="font-semibold text-lg">Senior Software Engineer</h4>
-                <p>Build scalable systems with modern frameworks. 3+ years of experience required.</p>
+                <h4 class="font-semibold text-lg">{{ job.title }}</h4>
+                <p><strong>Location:</strong> {{ job.location }}<br>
+                   <strong>Salary:</strong> {{ job.salary }}</p>
                 <button class="btn-custom mt-3">Apply Now</button>
             </div>
-            <div class="job-card">
-                <h4 class="font-semibold text-lg">UX/UI Designer</h4>
-                <p>Craft intuitive, beautiful interfaces. Proficiency in Figma or Sketch preferred.</p>
-                <button class="btn-custom mt-3">Apply Now</button>
-            </div>
-            <div class="job-card">
-                <h4 class="font-semibold text-lg">Data Analyst</h4>
-                <p>Turn data into insights. Experience with Python and SQL is a plus.</p>
-                <button class="btn-custom mt-3">Apply Now</button>
-            </div>
+            {% endfor %}
         </section>
 
         <!-- Contact Section -->
