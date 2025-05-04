@@ -186,12 +186,7 @@
         <section id="jobs-openings" class="section-content animate-fadeIn mb-5">
             <h3>Open Positions</h3>
             {% for job in jobs %}
-            <div class="job-card">
-                <h4 class="font-semibold text-lg">{{ job.title }}</h4>
-                <p><strong>Location:</strong> {{ job.location }}<br>
-                   <strong>Salary:</strong> {{ job.salary }}</p>
-                <button class="btn-custom mt-3">Apply Now</button>
-            </div>
+                {% include 'jobItems.htm' %}
             {% endfor %}
         </section>
 
